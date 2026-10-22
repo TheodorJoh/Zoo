@@ -15,8 +15,13 @@ namespace Zoo.Modules
         public string Order { get; set; }
 
 
+        public abstract void MakeSound();
 
-        public abstract void makeSound();
+        public abstract void Fetch();
+
+        public abstract void Roll();
+
+        public abstract void Sit();
 
 
     }
