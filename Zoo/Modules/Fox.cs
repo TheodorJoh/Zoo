@@ -6,6 +6,7 @@ namespace Zoo.Modules
 {
     public class Fox : Animal
     {
+        public string Sound {  get; set; }
         public override void MakeSound()
         {
             Console.WriteLine("Ringigingnging");
@@ -27,32 +28,7 @@ namespace Zoo.Modules
 
         public void WhatDoesTheFoxSay()
         {
-            Random rand = new Random();
-            int Numb = rand.Next(1, 5);
-            if(Numb == 1)
-            {
-                Console.WriteLine("The fox says bribrinbrinrbin");
-            }
-            else if(Numb == 2)
-            {
-                Console.WriteLine("The fox says kakakakak");
-            }
-            else if(Numb == 3)
-            {
-                Console.WriteLine("The fox says popopopo");
-            }
-            else if(Numb == 4)
-            {
-                Console.WriteLine("The fox says dakdakdakdakdak");
-            }
-            else if(Numb == 5)
-            {
-                Console.WriteLine("The fox says apapapapap");
-            }
-            else
-            {
-                MakeSound();
-            }
+            Console.WriteLine($"The fox says {Sound}");
         }
     }
 }

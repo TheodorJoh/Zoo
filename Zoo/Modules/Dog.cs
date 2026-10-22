@@ -6,6 +6,7 @@ namespace Zoo.Modules
 {
     public class Dog : Animal
     {
+        public string Size {  get; set; }
         public override void MakeSound()
         {
             Console.WriteLine("Wooof");
