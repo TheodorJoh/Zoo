@@ -24,5 +24,10 @@ namespace Zoo.Modules
         {
             Console.WriteLine("The dog sits");
         }
+
+        public void Guard()
+        {
+            Console.WriteLine("The dog guards valiantly");
+        }
     }
 }

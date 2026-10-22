@@ -25,5 +25,10 @@ namespace Zoo.Modules
         {
             Console.WriteLine("The lion does not want to sit");
         }
+
+        public void Intimidate()
+        {
+            Console.WriteLine("The lion roars intimidatingly");
+        }
     }
 }

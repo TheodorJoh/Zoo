@@ -8,7 +8,7 @@ namespace Zoo.Modules
     {
         public override void MakeSound()
         {
-            Console.WriteLine("Kaaaaa");
+            Console.WriteLine("Cawwww");
         }
 
         public override void Fetch()
@@ -24,6 +24,11 @@ namespace Zoo.Modules
         public override void Sit()
         {
             Console.WriteLine("The parrot sits on its litte stick");
+        }
+
+        public void Imitate(string Input)
+        {
+            Console.WriteLine($"{Input} cawwwwww");
         }
     }
 }

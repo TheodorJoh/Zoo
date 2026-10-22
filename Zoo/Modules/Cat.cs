@@ -25,5 +25,10 @@ namespace Zoo.Modules
         {
             Console.WriteLine("The cat does not want tot sit");
         }
+
+        public void Cuddly()
+        {
+            Console.WriteLine("The cats lets you cuddle");
+        }
     }
 }
