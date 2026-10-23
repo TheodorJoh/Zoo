@@ -6,11 +6,11 @@ namespace Zoo.Modules
 {
     public class Fox : Animal
     {
-        public Fox(string Name, int Age, int Height, string Class, string Order, string Sound) : base(Name, Age, Height, Class, Order)
+        public Fox(string Name, int Age, decimal Weigth, string Class = "Mammal", string Order = "Carnivore", string Sound = "Ringinging") : base(Name, Age, Weigth, Class, Order)
         {
             this.Name = Name;
             this.Age = Age;
-            this.Height = Height;
+            this.Weigth = Weigth;
             this.Class = Class;
             this.Order = Order;
             this.Sound = Sound;

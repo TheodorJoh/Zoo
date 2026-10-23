@@ -6,18 +6,17 @@ namespace Zoo.Modules
 {
     public abstract class Animal
     {
-        protected Animal(string Name, int Age, int Height, string Class, string Order)
+        protected Animal(string Name = "Unknown", int Age = 0, decimal Weigth = 0m, string Class = "Unknown", string Order = "Unknown")
         {
             this.Name = Name;
             this.Age = Age;
-            this.Height = Height;
+            this.Weigth = Weigth;
             this.Class = Class;
             this.Order = Order;
-
         }
         public string Name { get; set; }
         public int Age { get; set; }
-        public int Height { get; set; }
+        public decimal Weigth { get; set; }
 
         public string Class { get; set; }
 
