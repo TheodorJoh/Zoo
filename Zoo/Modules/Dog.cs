@@ -6,6 +6,14 @@ namespace Zoo.Modules
 {
     public class Dog : Animal
     {
+        public Dog(string Name, int Age, int Height, string Class, string Order) : base(Name, Age, Height, Class, Order)
+        {
+            this.Name = Name;
+            this.Age = Age;
+            this.Height = Height;
+            this.Class = Class;
+            this.Order = Order;
+        }
         public string Size {  get; set; }
         public override void MakeSound()
         {

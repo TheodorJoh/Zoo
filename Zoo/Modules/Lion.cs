@@ -6,6 +6,15 @@ namespace Zoo.Modules
 {
     public class Lion : Animal
     {
+        public Lion(string Name, int Age, int Height, string Class, string Order) : base(Name, Age, Height, Class, Order)
+        {
+            this.Name = Name;
+            this.Age = Age;
+            this.Height = Height;
+            this.Class = Class;
+            this.Order = Order;
+        }
+        public string Mane { get; set; };
         public override void MakeSound()
         {
             Console.WriteLine("Rooooooarrr");
