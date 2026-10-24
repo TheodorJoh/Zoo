@@ -30,7 +30,7 @@ namespace Zoo.Modules
 
         public override void Sit()
         {
-            Console.WriteLine("The cat does not want tot sit");
+            Console.WriteLine("The cat does not want to sit");
         }
 
         public void Purr()

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Text;
 
 namespace Zoo.Modules
@@ -31,7 +30,7 @@ namespace Zoo.Modules
 
         public override void Sit()
         {
-            Console.WriteLine("The parrot sits on its litte stick");
+            Console.WriteLine("The parrot sits on a little stick");
         }
 
         public void Imitate(string Input)
