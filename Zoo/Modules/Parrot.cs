@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace Zoo.Modules
 {
     public class Parrot : Animal
     {
-        public Parrot(string Name, int Age, decimal Weigth, string Class = "Bird", string Order = "Omnivore", string TalonSize = "Unknown") : base(Name, Age, Weigth, Class, Order)
+        public Parrot(string Name, int Age, decimal Weigth, string TalonSize = "Unknown") : base(Name, Age, Weigth)
         {
             this.Name = Name;
             this.Age = Age;
             this.Weigth = Weigth;
-            this.Class = Class;
-            this.Order = Order;
+            this.Class = "Bird";
+            this.Order = "Omnivore";
             this.TalonSize = TalonSize;
         }
         public string TalonSize {  get; set; }
@@ -39,6 +40,11 @@ namespace Zoo.Modules
         public void Imitate(string Input)
         {
             Console.WriteLine($"{Input} cawwwwww");
+        }
+        public override void PrintAnimalInfo()
+        {
+            Console.WriteLine("Parrot:");
+            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weigth: {Weigth}\n Class: {Class}\n Order: {Order}\n TalonSize: {TalonSize}\n");
         }
     }
 }

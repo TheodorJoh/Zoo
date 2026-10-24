@@ -6,13 +6,13 @@ namespace Zoo.Modules
 {
     public class Dog : Animal
     {
-        public Dog(string Name, int Age, decimal Weigth, string Class ="Mammal", string Order = "Carnivore", string Size = "Unknown") : base(Name, Age, Weigth, Class, Order)
+        public Dog(string Name, int Age, decimal Weigth, string Size = "Unknown") : base(Name, Age, Weigth)
         {
             this.Name = Name;
             this.Age = Age;
             this.Weigth = Weigth;
-            this.Class = Class;
-            this.Order = Order;
+            this.Class = "Mammal";
+            this.Order = "Carnivore";
             this.Size = Size;
         }
         public string Size {  get; set; }
@@ -38,6 +38,11 @@ namespace Zoo.Modules
         public void Guard()
         {
             Console.WriteLine("The dog guards valiantly");
+        }
+        public override void PrintAnimalInfo()
+        {
+            Console.WriteLine("Dog:");
+            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weigth: {Weigth}\n Class: {Class}\n Order: {Order}\n Size: {Size}\n");
         }
     }
 }
