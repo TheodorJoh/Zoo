@@ -30,7 +30,7 @@ namespace Zoo
 
             Lion Liam = new Lion("Liam", 23, 85, "Beautiful");
             Liam.MakeSound();
-            Kalle.PrintAnimalInfo();
+            Liam.PrintAnimalInfo();
 
             Parrot Patrick = new Parrot("Patrick", 2, 1m, "Large");
             Patrick.MakeSound();

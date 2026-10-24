@@ -6,13 +6,8 @@ namespace Zoo.Modules
 {
     public class BritishLongHair : Cat
     {
-        public BritishLongHair(string Name, int Age, decimal Weigth, string Color, string Temprement = "Unknown") : base(Name, Age, Weigth, Color)
+        public BritishLongHair(string Name, int Age, decimal Weight, string Color, string Temprement = "Unknown") : base(Name, Age, Weight, Color)
         {
-            this.Name = Name;
-            this.Age = Age;
-            this.Weigth = Weigth;
-            this.Class = "Mammal";
-            this.Order = "Carnivore";
             this.Temprement = Temprement;
         }
         public string Temprement;
@@ -23,7 +18,7 @@ namespace Zoo.Modules
         public override void PrintAnimalInfo()
         {
             Console.WriteLine("BritishLongHair:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weigth: {Weigth}\n Class: {Class}\n Order: {Order}\n Color: {Color}\n Temprement: {Temprement}\n");
+            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Order: {Order}\n Color: {Color}\n Temprement: {Temprement}\n");
         }
 
     }

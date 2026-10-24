@@ -7,11 +7,8 @@ namespace Zoo.Modules
 {
     public class Parrot : Animal
     {
-        public Parrot(string Name, int Age, decimal Weigth, string TalonSize = "Unknown") : base(Name, Age, Weigth)
+        public Parrot(string Name, int Age, decimal Weight, string TalonSize = "Unknown") : base(Name, Age, Weight)
         {
-            this.Name = Name;
-            this.Age = Age;
-            this.Weigth = Weigth;
             this.Class = "Bird";
             this.Order = "Omnivore";
             this.TalonSize = TalonSize;
@@ -44,7 +41,7 @@ namespace Zoo.Modules
         public override void PrintAnimalInfo()
         {
             Console.WriteLine("Parrot:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weigth: {Weigth}\n Class: {Class}\n Order: {Order}\n TalonSize: {TalonSize}\n");
+            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Order: {Order}\n TalonSize: {TalonSize}\n");
         }
     }
 }

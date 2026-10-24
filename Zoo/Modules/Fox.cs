@@ -6,11 +6,8 @@ namespace Zoo.Modules
 {
     public class Fox : Animal
     {
-        public Fox(string Name, int Age, decimal Weigth, string Sound = "Ringinging") : base(Name, Age, Weigth)
+        public Fox(string Name, int Age, decimal Weight, string Sound = "Ringinging") : base(Name, Age, Weight)
         {
-            this.Name = Name;
-            this.Age = Age;
-            this.Weigth = Weigth;
             this.Class = "Mammal";
             this.Order = "Carnivore";
             this.Sound = Sound;
@@ -42,7 +39,7 @@ namespace Zoo.Modules
         public override void PrintAnimalInfo()
         {
             Console.WriteLine("Fox:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weigth: {Weigth}\n Class: {Class}\n Order: {Order}\n Sound:{Sound}\n");
+            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Order: {Order}\n Sound:{Sound}\n");
         }
     }
 }
