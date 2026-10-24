@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Text;
 
 namespace Zoo.Modules
 {
+    //Lion
+    //Child class to Animal
+    // Name : String that stands for the name of an animal
+    // Age : String that stands for the age of an animal
+    // Weight : Integer that stands for the weight of an animal
+    // Class : String that stands for the class of an animal (For example cats are Mammals)
+    // Diet : String that stands for the diet of an animal
+    // Mane : String that stands for the mane of the Lion
     public class Lion : Animal
     {
         public Lion(string Name = "Unknown", int Age = -1, decimal Weight = -1, string Mane = "Unknown") : base(Name, Age, Weight)
