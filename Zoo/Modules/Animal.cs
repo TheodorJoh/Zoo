@@ -13,7 +13,7 @@ namespace Zoo.Modules
             this.Age = Age;
             this.Weight = Weight;
             this.Class = "Unknown";
-            this.Order = "Unknown";
+            this.Diet = "Unknown";
         }
         public string Name { get; set; }
         public int Age { get; set; }
@@ -22,7 +22,7 @@ namespace Zoo.Modules
         public string Class { get; set; }
 
 
-        public string Order { get; set; }
+        public string Diet { get; set; }
 
 
         public abstract void MakeSound();

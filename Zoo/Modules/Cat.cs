@@ -9,7 +9,7 @@ namespace Zoo.Modules
         public Cat(string Name, int Age, decimal Weight, string Color = "Unknown") : base(Name, Age, Weight)
         {
             this.Class = "Mammal";
-            this.Order = "Carnivore";
+            this.Diet = "Carnivore";
             this.Color = Color;
         }
         public string Color;
@@ -41,7 +41,7 @@ namespace Zoo.Modules
         public override void PrintAnimalInfo()
         {
             Console.WriteLine("Cat:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Order: {Order}\n Color: {Color}\n");
+            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Diet: {Diet}\n Color: {Color}\n");
         }
     }
 }
