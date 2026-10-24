@@ -10,7 +10,7 @@ namespace Zoo.Modules
         {
             this.Temprement = Temprement;
         }
-        public string Temprement;
+        public string Temprement { get; set; }
         public void RunLikeCrazy()
         {
             Console.WriteLine("Cat runs around like crazy");

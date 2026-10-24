@@ -12,7 +12,7 @@ namespace Zoo.Modules
             this.Diet = "Carnivore";
             this.Color = Color;
         }
-        public string Color;
+        public string Color {  get; set; }
         public override void MakeSound()
         {
             Console.WriteLine("Meowwww");
