@@ -6,7 +6,7 @@ namespace Zoo.Modules
 {
     public class Cat : Animal
     {
-        public Cat(string Name, int Age, decimal Weight, string Color = "Unknown") : base(Name, Age, Weight)
+        public Cat(string Name = "Unknown", int Age = -1, decimal Weight = -1, string Color = "Unknown") : base(Name, Age, Weight)
         {
             this.Class = "Mammal";
             this.Diet = "Carnivore";
