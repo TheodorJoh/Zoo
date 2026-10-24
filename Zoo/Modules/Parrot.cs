@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace Zoo.Modules
 {
     public class Parrot : Animal
     {
-        public Parrot(string Name, int Age, decimal Weight, string TalonSize = "Unknown") : base(Name, Age, Weight)
+        public Parrot(string Name = "Unknown", int Age = -1, decimal Weight = -1, string TalonSize = "Unknown") : base(Name, Age, Weight)
         {
             this.Class = "Bird";
             this.Diet = "Omnivore";
@@ -39,8 +40,8 @@ namespace Zoo.Modules
         }
         public override void PrintAnimalInfo()
         {
-            Console.WriteLine("Parrot:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Diet: {Diet}\n TalonSize: {TalonSize}\n");
+            base.PrintAnimalInfo();
+            Console.WriteLine($" TalonSize: {TalonSize}");
         }
     }
 }

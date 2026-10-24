@@ -40,8 +40,8 @@ namespace Zoo.Modules
 
         public override void PrintAnimalInfo()
         {
-            Console.WriteLine("Cat:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Diet: {Diet}\n Color: {Color}\n");
+            base.PrintAnimalInfo();
+            Console.WriteLine($" Color: {Color}");
         }
     }
 }

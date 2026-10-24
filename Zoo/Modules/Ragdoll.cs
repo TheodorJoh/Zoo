@@ -6,7 +6,7 @@ namespace Zoo.Modules
 {
     public class Ragdoll : Cat
     {
-        public Ragdoll(string Name, int Age, decimal Weight, string Color = "Unknown", string Fur = "Unknown") : base(Name, Age, Weight, Color)
+        public Ragdoll(string Name = "Unknown", int Age = -1, decimal Weight = -1, string Color = "Unknown", string Fur = "Unknown") : base(Name, Age, Weight, Color)
         {
             this.Fur = Fur;
         }
@@ -17,8 +17,8 @@ namespace Zoo.Modules
         }
         public override void PrintAnimalInfo()
         {
-            Console.WriteLine("Ragdoll:");
-            Console.WriteLine($"\n Name: {Name}\n Age: {Age}\n Weight: {Weight}\n Class: {Class}\n Diet: {Diet}\n Color: {Color}\n Fur: {Fur}\n");
+            base.PrintAnimalInfo();
+            Console.WriteLine($" Fur: {Fur}");
         }
     }
 }
